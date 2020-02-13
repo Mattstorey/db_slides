@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Genomics meeting</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"
+    />
+    
+    <link rel="stylesheet" type="text/css" href="./css/quasar.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="./css/pure-min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/spaces.css" />
+    <link rel="stylesheet" type="text/css" href="./css/typo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/devices.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/gh-fork-ribbon.css" />
+    <link rel="stylesheet" type="text/css" href="./css/nord-dark.css" />
+    <link rel="stylesheet" type="text/css" href="./css/nord-light.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-nord.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bg-nord.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-open-color.css" />
+    <link rel="stylesheet" type="text/css" href="./css/bg-open-color.css" />
+    <link rel="stylesheet" type="text/css" href="./css/material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="./css/abs-layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/text-rect.css" />
+    <link rel="stylesheet" type="text/css" href="./css/text-circle.css" />
+    <link rel="stylesheet" type="text/css" href="./css/card.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lines.css" />
+    <link rel="stylesheet" type="text/css" href="./css/filters.css" />
+    <link rel="stylesheet" type="text/css" href="./fonts/remixicon.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  
+  </head>
+      
+    <body>
+       
+      
+      <textarea id="source">
+
+layout: true
+class: typo, typo-selection
+    
+---
+
+count: false
+class: nord-dark, center, middle
+
+# POC Clinical Diagnostics 
+Considerations of Customised Sequence Databases 
+
+
+---
+class: nord-dark, middle
+
+# Big Picture Goal
+    
+> Generate metagenomic sequence data from clinical samples and 
+> analyse this data in real time to diagnose infections at the hospital 
+> on an intergrated end-to-end platform.  
+
+---
+
+class: nord-dark, center
+
+## PLATFORM REQUIREMENTS
+
+.sat-65.font-md.rect.dark.round-lg.green.border[
+
+.sat-55.rect.round-lg.green.border.width-100[
+.rect.width-23[**Sample**] 
+  .rect.round-lg.teal.border.width-23[**Target Enrichment**]
+  .rect.round-lg.teal.border.width-23[**Extraction**]
+  .rect.round-lg.teal.border.width-23[**Library Prep**]
+]
+
+.rect.dark.round-lg.blue.border.width-100[
+  .rect.round-lg.green.border.width-100[
+  .rect.width-23[**Sequencing/ Basecalling**]
+  .rect.round-lg.teal.border.width-35[**ONT**]
+  .rect.round-lg.teal.border.width-35[**Compute**] 
+  ]
+
+.rect.round-lg.green.border.width-100[
+.rect.width-23[**Data analysis**]
+.rect.round-lg.teal.border.width-23[**Mapping**] 
+.sat-100.rect.round-lg.red.border.width-23[**Database**]
+.rect.round-lg.teal.border.width-23[**Compute**]
+  ]
+  .width-100[**Portable Device**]
+]
+
+
+.sat-55.rect.round-lg.green.border.width-100[
+  .rect.width-23[**Reporting**]
+  .rect.round-lg.teal.border.width-23[**Relevance**]
+  .rect.round-lg.teal.border.width-23[**Interpretation**]
+  .rect.round-lg.teal.border.width-23[**Confidence**]
+]
+
+]
+
+---
+class: nord-dark
+
+## .center[Sequence Databases]
+
+A collection of known genomes sequences with taxonomic lables (names) that is preprocessed (indexed) to allow for very fast searching.    
+We can search a database using our newly generated sequences as the quary to workout what organisms our sequences comes from.
+
+&nbsp;
+- In a given database search, the time and space complexity is proportioal to database size.
+- Most standard sequence databases (Kraken2, Centrifuge, etc) are based on .oc-blue-9[**NCBI RefSeq**], which is very large.    
+
+
+---
+class: nord-dark
+## .center[NCBI Issues]
+
+Gross mislabelling 
+example...
+
+
+
+
+
+---
+exclude:true
+<iframe width="100%" height="100%" src="html/taxonomy.krona.html" allowfullscreen frameborder=”no” border=”0″ marginwidth=”0″ marginheight=”0″ scrolling=”yes” allowtransparency=”yes”></iframe>
+
+
+---
+class: nord-dark
+## .center[Recomended Reading]
+&nbsp;
+
+
+[.oc-blue-9.typo-u[**Correcting index databases improves metagenomic studies**]](https://www.biorxiv.org/content/10.1101/712166v1.full.pdf)
+
+[.oc-blue-9.typo-u[**A review of methods and databases for metagenomic classification and assembly**]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6781581/pdf/bbx120.pdf)
+
+[.oc-blue-9.typo-u[**Defining pathogenic bacterial species in the genomic era**]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3109419/)
+
+[.oc-blue-9.typo-u[**Genomics and the bacterial species problem**]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1794555/)
+
+[.oc-blue-9.typo-u[**Prokaryotic evolution and the tree of life are two different things**]](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-34)
+
+---
+
+    </textarea>
+
+
+
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+        
+    <script>
+
+      var slideshow = remark.create({
+        navigation: {
+          scroll: true
+        }
+      }); 
+        
+    </script>
+
+  </body>
+
+</html>
