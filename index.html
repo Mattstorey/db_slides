@@ -58,7 +58,10 @@ class: nord-dark, middle
 > analyse this data in real time to diagnose infections at the hospital 
 > on an intergrated end-to-end platform.  
 
-.center["molecular epidemiology closer to the bedside"]
+&nbsp;
+
+.center["..bring molecular epidemiology closer to the bedside"]
+[.oc-gray-6.float-right.font-xs.width-65[Břinda, Karel, et al. "Rapid inference of antibiotic resistance and susceptibility by genomic neighbour typing." Nature Microbiology (2020): 1-10.]](https://www.nature.com/articles/s41564-019-0656-6)
 
 ---
 
@@ -107,19 +110,21 @@ class: nord-dark
 ## .center[Sequence Databases]
 
 A collection of known genomes sequences with taxonomic lables (names) that is preprocessed (indexed) to allow for very fast searching.    
-We can search a database using our newly generated sequences as the quary to workout what organisms our sequences comes from.
+We can search a database using our newly generated sequences as the query to workout what organisms our sequences comes from.
 
-&nbsp;
 - In a given database search, the time and space complexity is proportioal to database size.
-- Most standard sequence databases (Kraken2, Centrifuge, etc) are based on .oc-blue-9[**NCBI RefSeq**], which is very large.    
+- Most standard sequence databases (Kraken2, Centrifuge, etc) are based on .oc-blue-9[**NCBI RefSeq**], which is very large and has other issues.    
 
 
 ---
 class: nord-dark
 ## .center[NCBI Issues]
 
-Gross mislabelling 
+Some species are mislabled 
 example...
+
+.abs-layout.top-40.left-30.width-50[![](static/my_first_tree.png)]
+
 
 
 
