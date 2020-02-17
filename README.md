@@ -29,3 +29,28 @@ Insert tree picture (SVG?) with mislabled geneome.
 
 ## Slide 6
 
+Other taxonomy issues shown with trees
+
+## Slide 7
+
+NCBI redundancy
+
+## Slide 8
+
+How can we fix these issuse?
+Clustering, fix taxonomy, select representive.
+
+Use mash sketches.
+
+## Slide 9
+
+Show example with Kleb...
+
+## Slide 10
+
+Recomended reading
+
+## Slide 11
+
+genomic neighbour typing
+suseptibility scores 
