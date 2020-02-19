@@ -25,6 +25,13 @@ Sequence databases
 
 NCBI issues
 Mislable
+
+'GCF_002751815 Enterobacter hormaechei
+GCF_002925805 Enterobacter hormaechei
+GCF_003057395 Enterobacter cloacae
+GCF_900075465 Enterobacter hormaechei
+GCF_900076955 Enterobacter hormaechei'
+
 Insert tree picture (SVG?) with mislabled geneome.
 
 ## Slide 6
