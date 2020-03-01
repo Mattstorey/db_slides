@@ -3,8 +3,8 @@
 
 <style>
     img.one {
-      height: 75%;
-      width: 75%;
+      height: 85%;
+      width: 85%;
     }
   
 </style> 
@@ -69,13 +69,12 @@ class: nord-dark, middle
 
 &nbsp;
 
-.center["..bring molecular epidemiology closer to the bedside"]
+.center["...bring molecular epidemiology closer to the bedside"]
 [.oc-gray-6.float-right.font-xs.width-65[Břinda, Karel, et al. "Rapid inference of antibiotic resistance and susceptibility by genomic neighbour typing." Nature Microbiology (2020): 1-10.]](https://www.nature.com/articles/s41564-019-0656-6)
 
 ---
 
 class: nord-dark, center
-
 ## PLATFORM REQUIREMENTS
 
 .sat-65.font-md.rect.dark.round-lg.green.border[
@@ -97,6 +96,87 @@ class: nord-dark, center
 .rect.round-lg.green.border.width-100[
 .rect.width-23[**Data analysis**]
 .rect.round-lg.teal.border.width-23[**Mapping**] 
+.rect.round-lg.teal.border.width-23[**Database**]
+.rect.round-lg.teal.border.width-23[**Compute**]
+  ]
+  .width-100[**Portable Device**]
+]
+
+
+.sat-65.rect.round-lg.green.border.width-100[
+  .rect.width-23[**Reporting**]
+  .rect.round-lg.teal.border.width-23[**Relevance**]
+  .rect.round-lg.teal.border.width-23[**Interpretation**]
+  .rect.round-lg.teal.border.width-23[**Confidence**]
+]
+
+]
+
+
+---
+
+class: nord-dark, center
+## PLATFORM REQUIREMENTS
+
+.sat-65.font-md.rect.dark.round-lg.green.border[
+
+.sat-55.rect.round-lg.green.border.width-100[
+.rect.width-23[**Sample**] 
+  .rect.round-lg.teal.border.width-23[**Target Enrichment**]
+  .sat-100.rect.round-lg.red.border.width-23[**Extraction**]
+  .rect.round-lg.teal.border.width-23[**Library Prep**]
+]
+
+.rect.dark.round-lg.blue.border.width-100[
+  .rect.round-lg.green.border.width-100[
+  .rect.width-23[**Sequencing/ Basecalling**]
+  .rect.round-lg.teal.border.width-35[**ONT**]
+  .rect.round-lg.teal.border.width-35[**Compute**] 
+  ]
+
+.rect.round-lg.green.border.width-100[
+.rect.width-23[**Data analysis**]
+.sat-35.rect.round-lg.red.border.width-23[**Mapping**] 
+.sat-100.rect.round-lg.red.border.width-23[**Database**]
+.rect.round-lg.teal.border.width-23[**Compute**]
+  ]
+  .width-100[**Portable Device**]
+]
+
+
+.sat-55.rect.round-lg.green.border.width-100[
+  .rect.width-23[**Reporting**]
+  .rect.round-lg.teal.border.width-23[**Relevance**]
+  .rect.round-lg.teal.border.width-23[**Interpretation**]
+  .rect.round-lg.teal.border.width-23[**Confidence**]
+]
+
+]
+
+---
+
+class: nord-dark, center
+## PLATFORM REQUIREMENTS
+
+.sat-65.font-md.rect.dark.round-lg.green.border[
+
+.sat-55.rect.round-lg.green.border.width-100[
+.rect.width-23[**Sample**] 
+  .rect.round-lg.teal.border.width-23[**Target Enrichment**]
+  .sat-100.rect.round-lg.red.border.width-23[**Extraction**]
+  .rect.round-lg.teal.border.width-23[**Library Prep**]
+]
+
+.rect.dark.round-lg.blue.border.width-100[
+  .rect.round-lg.green.border.width-100[
+  .rect.width-23[**Sequencing/ Basecalling**]
+  .rect.round-lg.teal.border.width-35[**ONT**]
+  .rect.round-lg.teal.border.width-35[**Compute**] 
+  ]
+
+.rect.round-lg.green.border.width-100[
+.rect.width-23[**Data analysis**]
+.sat-35.rect.round-lg.red.border.width-23[**Mapping**] 
 .sat-100.rect.round-lg.red.border.width-23[**Database**]
 .rect.round-lg.teal.border.width-23[**Compute**]
   ]
@@ -129,40 +209,12 @@ We can search a database using our newly generated sequences as the query to wor
 class: nord-dark
 ## .center[NCBI Issues]
 
-.center[The NCBI supplied taxonomy is polyphyletic]
-
+.center[The NCBI supplied taxonomy is polyphyletic.]
 Some species are just mislabled... 
 
 .img[![](static/R988.PNG)]
 
 This *N. meningitidis* is labled as a *Psychobacter*??
----
-class: nord-dark, center
-## NCBI Issues
-
-
-<img class="one" src="static/small_tree.PNG" alt="drawing"/>
-
-Identified a misclassified Cronobacter by building a tree
-
----
-class: nord-dark, center
-## NCBI Issues
-
-
-<img class="one" src="static/fixed_tree.PNG" alt="drawing"/>
-
-Fixed the offending taxon, now tree is monophyletic. A diagnosis based on a database of these genomes will be accurate.
-
----
-class: nord-dark, center
-## NCBI Issues
-
-
-<img class="one" src="static/tree_crono.PNG" alt="drawing"/>
-
-
-Remove the offending Genus from the Cronobacter tree.  
 
 ---
 class: nord-dark
@@ -199,12 +251,65 @@ Some taxonomic groups are under studied, and species haven't been named yet...
 .abs-layout.top-40.width-35[![](static/bare_tree.svg)]
 .abs-layout.top-40.left-55.width-35[![](static/bare_tree_filled.svg)]
 
+
 ---
+
+
 class: nord-dark
-## .center[NCBI Issues]
+
+## .center[NCBI Issuse]
+
+&nbsp;
+
+<img src="static/disclaim.PNG" alt="drawing"/>
+
+&nbsp;
+
+Disclaimer: The NCBI taxonomy database is **not an authoritative source for nomenclature** or classification - please consult the relevant scientific literature for the most reliable information.
 
 
-Disclaimer: The NCBI taxonomy database is not an authoritative source for nomenclature or classification - please consult the relevant scientific literature for the most reliable information.
+---
+
+class:nord-dark, center
+
+## Fixing a mislabeled genome
+
+
+  
+
+  Download all the genomes for the Genera from NCBI
+
+  (refSeq - complete genomes)
+  
+
+
+---
+class: nord-dark, center
+## Fixing a mislabeled genome
+
+
+<img class="one" src="static/small_tree.PNG" alt="drawing"/>
+
+Identified a misclassified Cronobacter by building a tree
+
+---
+class: nord-dark, center
+## Fixing a mislabeled genome
+
+
+<img class="one" src="static/fixed_tree.PNG" alt="drawing"/>
+
+Fixed the offending taxon, now tree is monophyletic. A diagnosis based on a database of these genomes will be accurate.
+
+---
+class: nord-dark, center
+## Fixing a mislabeled genome
+
+
+<img class="one" src="static/tree_crono.PNG" alt="drawing"/>
+
+
+Remove the offending Genus from the Cronobacter tree.  
 
 ---
 exclude:true
@@ -212,7 +317,11 @@ exclude:true
 
 ---
 class: nord-dark
-## .center[Fixing a mislabeled genome]
+## .center[Collect Genomes of Interest]
+
+---
+class: nord-dark
+## .center[Neighbour ARM typing]
 
 
 ---
@@ -231,13 +340,13 @@ class: nord-dark
 
 [.oc-blue-9.typo-u[**Prokaryotic evolution and the tree of life are two different things**]](https://biologydirect.biomedcentral.com/articles/10.1186/1745-6150-4-34)
 
+
 ---
 ## Hosted 
 
 ---
 
     </textarea>
-
 
 
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
